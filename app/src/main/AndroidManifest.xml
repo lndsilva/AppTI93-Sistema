@@ -9,17 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppTI93Sistema">
-        <activity android:name=".Menu_Activity"></activity>
-        <activity android:name=".Login_Activity" android:theme="@style/temaSemBarra" />
-        <activity android:name=".Splash_Activity" android:theme="@style/temaSemBarra" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".PetsActivity"
+            android:theme="@style/temaSemBarra">
 
         </activity>
+        <activity android:name=".TermoUsoActivity" />
+        <activity android:name=".RecuperarSenhaActivity" />
+        <activity
+            android:name=".Menu_Activity"
+            android:theme="@style/temaSemBarra" />
+        <activity
+            android:name=".Login_Activity"
+            android:theme="@style/temaSemBarra" />
+        <activity
+            android:name=".Splash_Activity"
+            android:theme="@style/temaSemBarra">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

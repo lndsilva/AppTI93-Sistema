@@ -1,28 +1,29 @@
 package br.com.local.appti93_sistema;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Menu_Activity extends AppCompatActivity {
+import com.google.android.material.appbar.MaterialToolbar;
 
-    CardView idCardPets;
+public class PetsActivity extends AppCompatActivity {
+    MaterialToolbar idToolBarpets;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.menu_layout);
+        setContentView(R.layout.pets_layout);
 
-        idCardPets = findViewById(R.id.idCardPets);
+        idToolBarpets = findViewById(R.id.idToolBarpets);
 
-        idCardPets.setOnClickListener(new View.OnClickListener() {
+        idToolBarpets.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),
-                        PetsActivity.class));
+                        Menu_Activity.class));
+                finish();
             }
         });
     }
