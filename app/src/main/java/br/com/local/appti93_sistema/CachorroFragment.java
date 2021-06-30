@@ -21,7 +21,7 @@ public class CachorroFragment extends Fragment {
     String nomesCachorros[] = {"Pluto", "Dogger", "Comprido", "Pug", "Puppy"};
     String racaCachorros[] = {"Maltipoo", "Boston terrier", "Galgo inglês", "Terra nova", "Chow-chow"};
     String corCachorros[] = {"Preto", "Branco", "Cinza", "Amarelo", "Vermelho"};
-    int idadeCachorros[] = {9, 10, 12, 8, 2};
+    String idadeCachorros[] = {"9", "10", "12", "8", "2"};
     String dmaCachorros[] = {"Meses", "Meses", "Anos", "Anos", "Meses"};
     int imgCachorros[] = {R.drawable.pluto, R.drawable.dogger, R.drawable.comprido,
             R.drawable.pug, R.drawable.puppy};
